@@ -1,4 +1,4 @@
-package EmployeManagerServer;
+package EmployeManagerServer.Person;
 
 import java.util.List;
 

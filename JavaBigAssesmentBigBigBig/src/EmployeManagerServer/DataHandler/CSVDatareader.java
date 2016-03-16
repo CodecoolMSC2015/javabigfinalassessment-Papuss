@@ -1,12 +1,17 @@
 package EmployeManagerServer.DataHandler;
 
 
+import javax.sound.sampled.Port;
 import java.io.*;
+import java.net.Socket;
 import java.util.*;
 
 
 public class CSVDatareader extends Datareader {
 
+    static Socket socket = null;
+    static ObjectInputStream objectInputStream;
+    static ObjectOutputStream objectOutputStream;
     private String csvFilePath;
 
     public CSVDatareader(String csvFilePath) {
@@ -32,6 +37,7 @@ public class CSVDatareader extends Datareader {
                 }
 
             }
+
             scanner.close();
         }
 

@@ -1,4 +1,4 @@
-package EmployeManagerServer;
+package EmployeManagerServer.DataHandler;
 
 
 public enum SearchType {

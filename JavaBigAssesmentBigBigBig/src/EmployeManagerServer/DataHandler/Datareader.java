@@ -1,11 +1,7 @@
 package EmployeManagerServer.DataHandler;
 
+import EmployeManagerServer.Person.Person;
 
-import EmployeManagerServer.Person;
-import EmployeManagerServer.SearchType;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Set;
 
 public class Datareader {
@@ -13,7 +9,7 @@ public class Datareader {
     String searchCriteria;
     SearchType searchType;
 
-    public Set<Person> getPersons(String name, SearchType searchType){
+    public Set<Person> getPersons(String searchCriteria, SearchType searchType) {
         return null;
     }
 

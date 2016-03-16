@@ -1,4 +1,4 @@
-package EmployeManagerServer;
+package EmployeManagerServer.Person;
 
 
 public class Employee extends Person {
