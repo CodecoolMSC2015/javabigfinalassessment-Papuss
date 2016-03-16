@@ -2,7 +2,7 @@ package EmployeManagerServer.Person;
 
 import java.util.List;
 
-public class Person{
+public class Person {
 
     String name;
     String email;
@@ -40,7 +40,7 @@ public class Person{
         this.skillset = skillset;
     }
 
-    public void addSkill(){
+    public void addSkill() {
 
     }
 }

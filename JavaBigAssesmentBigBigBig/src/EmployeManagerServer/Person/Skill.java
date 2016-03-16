@@ -1,6 +1,5 @@
 package EmployeManagerServer.Person;
 
-
 public class Skill {
 
     String name;
