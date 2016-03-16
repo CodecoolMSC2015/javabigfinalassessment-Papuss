@@ -1,4 +1,4 @@
-package EmployeManagerServer;
+package EmployeManagerServer.DataHandler;
 
 
 import java.io.*;
@@ -15,27 +15,31 @@ public class CSVDatareader extends Datareader {
 
 
     public List<String> getPersons(List<String> searchcriteria) throws IOException {
-        Scanner scanner = new Scanner(new File(csvFilePath));
-        scanner.useDelimiter(";");
+
+
         List<String> personList = new ArrayList<String>();
-        while (scanner.hasNext()){
+        for (String item : searchcriteria) {
+            Scanner scanner = new Scanner(new File(csvFilePath));
             scanner.useDelimiter(";");
-            String nl = scanner.nextLine();
-            for (String list : personList){
-                System.out.println(list);
-                if (nl.contains(list)){
-                    personList.add(nl);
+            while (scanner.hasNext()) {
+                scanner.useDelimiter(";");
+                String nl = scanner.nextLine();
+                {
+                    if (nl.contains(item)) {
+                        personList.add(nl);
+
+                    }
                 }
+
             }
-
-
+            scanner.close();
         }
-        scanner.close();
-
 
 
         return personList;
     }
+
+
 }
 
 

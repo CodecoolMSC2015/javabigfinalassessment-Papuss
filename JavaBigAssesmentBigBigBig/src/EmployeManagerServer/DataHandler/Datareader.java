@@ -1,5 +1,8 @@
-package EmployeManagerServer;
+package EmployeManagerServer.DataHandler;
 
+
+import EmployeManagerServer.Person;
+import EmployeManagerServer.SearchType;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
